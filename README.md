@@ -5,8 +5,21 @@ Summary of the knowledge that is useful/popular in machine learning/data science
 1. https://towardsdatascience.com/illustrated-guide-to-lstms-and-gru-s-a-step-by-step-explanation-44e9eb85bf21 is a very clear explanation for beginners.
 2. http://colah.github.io/posts/2015-08-Understanding-LSTMs/ is another good resource, expecially for how the vector flows.
 3. https://pytorch.org/tutorials/beginner/nlp/sequence_models_tutorial.html is the official explanation in Pytorch.
+4. When can't we use BiLSTM?
+   In any bi-directional model, we assume that we have access to the next elements of the sequence in a given “time”. This is the case for text data (i.e sentiment    analysis, translation etc.), but not the case for time-series data.
 
 ## Loss Functions
 1. [torch.nn.NLLLoss()](https://pytorch.org/docs/stable/generated/torch.nn.NLLLoss.html): The negative log likelihood loss, which is useful to train a classification problem with C classes. Basically it is negative log of softmax. Here is good explanation: https://ljvmiranda921.github.io/notebook/2017/08/13/softmax-and-the-negative-log-likelihood/
 2. 
 
+## CNN
+1. What are some advantages in using CNN rather than Dense Neural Network in an image classification problem?
+   - Translation invariance: The convolution operator is translation invariant mathematically.
+   - Hierarchical nature: learns patterns in by describing complex patterns using simpler ones.
+   - Gives us a better understanding of the model: we can look at the filters’ weights and visualize what the network “learned”.
+2. 
+
+## Technique
+1. What are the advantages of batch normalization?
+   - It can accelarate the training process.
+   - It also has some regularizing effect by including some noise.
