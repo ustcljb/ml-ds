@@ -21,8 +21,8 @@ Summary of the knowledge that is useful/popular in machine learning/data science
 
 ## Technique
 1. What are the advantages of batch normalization?
-   - It can accelarate the training process.
-   - It also has some regularizing effect by including some noise.
+   - It can accelarate the training process. Larger learning rate could be used.
+   - It also has some regularizing effect by including some noise. So dropout may not be necessary.
 2. What are hyperparameters for **transfer learning**?
    - How many layers to keep, how many layers to add, how many to freeze.
    - If the new dataset is very small, it’s better to train only the final layers of the network to avoid overfitting, keeping all other layers fixed.
