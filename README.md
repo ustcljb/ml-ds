@@ -27,3 +27,6 @@ Summary of the knowledge that is useful/popular in machine learning/data science
    - How many layers to keep, how many layers to add, how many to freeze.
    - If the new dataset is very small, it’s better to train only the final layers of the network to avoid overfitting, keeping all other layers fixed.
    - If the new dataset is very much large, retrain the whole network with initial weights from the pretrained model.
+3. What is the difference between **model.train()** and **model eval()** mode in pytorch?
+   - **model.train()** tells that the model is training, so dropout and batchnorm will turn on.
+   - Usually We use the with **torch.no_grad()** block to ensure no gradients are calculated within the block. In addition, dropout and batchnorm will turn off.
