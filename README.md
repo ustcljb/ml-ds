@@ -30,6 +30,14 @@ Summary of the knowledge that is useful/popular in machine learning/data science
 3. What is the difference between **model.train()** and **model eval()** mode in pytorch?
    - **model.train()** tells that the model is training, so dropout and batchnorm will turn on.
    - Usually We use the with **torch.no_grad()** block to ensure no gradients are calculated within the block. In addition, dropout and batchnorm will turn off.
-4. What is concept drift?
+
+## General Concepts
+1. What is concept drift?
    - Concept drift in machine learning and data mining refers to the change in the relationships between input and output data in the underlying problem over time, which could degrade the performance for predictive models;
    - See [here](https://machinelearningmastery.com/gentle-introduction-concept-drift-machine-learning/) for more details.
+2. Online learning vs offline learning
+   - There are analogies: in the domain of data processing, online learning vs offline learning is like streaming process vs batch process; in the domain of gradient descent, it is like stochastic gradient descent vs mini-batch gradient descent.
+   - When to consider online learning:
+      - Your data is too large to fit in the memory;
+      - You expect the distribution of your data to morph or drift over time
+      - Your data is a function of time (e.g. stock prices)
