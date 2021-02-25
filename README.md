@@ -41,3 +41,8 @@ Summary of the knowledge that is useful/popular in machine learning/data science
       - Your data is too large to fit in the memory;
       - You expect the distribution of your data to morph or drift over time
       - Your data is a function of time (e.g. stock prices)
+
+3. Zero-shot learning
+   - Zero-short learning is a variant of transfer learning
+   - In usual machine learning, the learning model classifies instances whose labels(classes) are already in the training data; while zero-shot learning tries to do the same thing but without the predicted classes in the training data
+   - See [here](https://towardsdatascience.com/applications-of-zero-shot-learning-f65bb232963f) for more details 
