@@ -30,6 +30,18 @@ Summary of the knowledge that is useful/popular in machine learning/data science
 3. What is the difference between **model.train()** and **model eval()** mode in pytorch?
    - **model.train()** tells that the model is training, so dropout and batchnorm will turn on.
    - Usually We use the with **torch.no_grad()** block to ensure no gradients are calculated within the block. In addition, dropout and batchnorm will turn off.
+4. What are different types of random sampling?
+   - Simple random sampling
+      - Pros: Easy to implement
+      - Cons: No representation guarantee: might exclude rare classes(black swan)
+   - Stratified sampling
+      - Pros: Minor groups are represented
+      - Cons: Can not be used if data can not be devided into subgroups or one data sample could belong to multiple subgroups
+   - Weighted sampling
+   - Importance sampling
+      - Useful when sampling from the true distribution is expensive or infeasible
+   - Reservior sampling
+      - Need to select k samples from a stream of N data samples with equal probability
 
 ## General Concepts
 1. What is concept drift?
