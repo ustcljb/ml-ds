@@ -42,6 +42,12 @@ Summary of the knowledge that is useful/popular in machine learning/data science
       - Useful when sampling from the true distribution is expensive or infeasible
    - Reservior sampling
       - Need to select k samples from a stream of N data samples with equal probability
+5. Why we use epoches instead of randomly sampling with replacement from the entire dataset?
+   - In a nutshell, using epoches could make the training process converge faster. See [here](https://stats.stackexchange.com/questions/235844/should-training-samples-randomly-drawn-for-mini-batch-training-neural-nets-be-dr) for more details.
+6. How to deal with class imbalance?
+   - Add more minority samples or drop majority samples (resampling)
+   - Adjust losses (weight balancing)
+   - Choose algorithms robust to class imbalance
 
 ## General Concepts
 1. What is concept drift?
