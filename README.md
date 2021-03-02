@@ -58,3 +58,8 @@ Summary of the knowledge that is useful/popular in machine learning/data science
    - Zero-short learning is a variant of transfer learning
    - In usual machine learning, the learning model classifies instances whose labels(classes) are already in the training data; while zero-shot learning tries to do the same thing but without the predicted classes in the training data
    - See [here](https://towardsdatascience.com/applications-of-zero-shot-learning-f65bb232963f) for more details 
+4. Bagging, boosting and stacking
+   - **bagging**, that often considers homogeneous weak learners, learns them independently from each other in parallel and combines them following some kind of deterministic averaging process. (Random Forest)
+   - **boosting**, that often considers homogeneous weak learners, learns them sequentially in a very adaptative way (a base model depends on the previous ones) and combines them following a deterministic strategy. (Gradient Boosting Tree)
+   - **stacking**, that often considers heterogeneous weak learners, learns them in parallel and combines them by training a meta-model to output a prediction based on the different weak models predictions
+   - See [here](https://towardsdatascience.com/ensemble-methods-bagging-boosting-and-stacking-c9214a10a205) for more details.
